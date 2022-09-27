@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 224, 224);
+}
+
+#shooping-box {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 700px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#shooping-box .header {
+    padding: 30px 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.items {
+    height: 500px;
+    overflow-y: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 10px 20px;
+}
+
+.item_delete:hover {
+    transition: all 0.2s linear;
+    background-color: #0066ff;
+}
+
+.item span {
+    font-size: 24px;
+}
+.item button {
+    width: 60px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(98, 97, 97);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_input {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0066ff;
+    cursor: pointer;
+}
+.footer_button {
+    width: 400px;
+    height: 40px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(63, 221, 158);
+}
